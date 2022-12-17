@@ -1,4 +1,6 @@
+import LoadMoreButton from "modules/Home/components/LoadMoreButton";
 import Loading from "components/Loading";
+import StoryItem from "modules/Home/components/StoryItem";
 import { useMemo } from "react";
 import { useTopStories } from "services/home";
 import { Story } from "services/home/types";
@@ -39,29 +41,17 @@ const HomeScreen = () => {
 
   return (
     <>
-      <ul>
-        {items.map((item) => (
-          <li>
-            <h3>title: {item.title}</h3>
-            <h4>by: {item.by}</h4>
-            {item.url ? (
-              <a
-                key={item.id}
-                href={item.url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                ver mais
-              </a>
-            ) : (
-              <p>sem url</p>
-            )}
-          </li>
-        ))}
-      </ul>
-      {isFetching && <Loading />}
+      {items.map((item) => (
+        <StoryItem
+          key={item.id}
+          title={item.title}
+          by={item.by}
+          url={item.url}
+          id={item.id}
+        />
+      ))}
       {hasNextPage && (
-        <button onClick={() => fetchNextPage()}>Load more</button>
+        <LoadMoreButton fetchNextPage={fetchNextPage} isFetching={isFetching} />
       )}
     </>
   );
