@@ -1,5 +1,4 @@
 import { DefaultTheme } from "styled-components";
-import "@fontsource/roboto";
 
 export const theme: DefaultTheme = {
   colors: {
