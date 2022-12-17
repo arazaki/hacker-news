@@ -2,12 +2,12 @@
 
 To display HackerNews info as list.
 
-## Instructions
+## Instructions and Requirements
 
-Requirement
 {title of news} {author} {link}
 Mandatory Requirement for UI
-1 - Before finish fetching data, please showing loading icon or animation. 2 - To display list of hacker news top stories(100news)
+1 - Before finish fetching data, please showing loading icon or animation.
+2 - To display list of hacker news top stories(100news)
 3 - Each hacker news has link to navigate actual page as new tab.
 4 - (Bonus) - Infinite scrolling or pagenation
 5 - (Bonus) - Performance improvement
@@ -17,6 +17,7 @@ Mandatory
 2 - Use typescript.
 3 - NOT use UI library(e.g material design, bootstrap).
 But to use css framewotk(e.g styled-component, css-in-module are ok).
+
 API Spec
 
 - Whole spec https://github.com/HackerNews/API
@@ -33,3 +34,19 @@ https://github.com/taka66
 https://github.com/setowilliam
 Question
 If you have any question, please feel free to send email to takahiro.fujii@wealth-park.com
+
+## Getting Start
+
+After cloning this repository, follow the steps below to run the application.
+
+1. Run `npm install` to install the dependencies.
+2. Run `npm start` to start the application locally.
+3. Go to [localhost:3000](http://localhost:3000/) to access the web application.
+
+## Dependencies
+
+This application uses the follow packages:
+
+- [Styled components](https://styled-components.com/)
+- [Axios](https://axios-http.com/docs/intro)
+- [React Query](https://tanstack.com/query/v4/docs/installation)
