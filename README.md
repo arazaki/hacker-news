@@ -4,8 +4,6 @@ To display HackerNews info as list.
 
 ## Instructions and Requirements
 
-{title of news} {author} {link}
-
 Mandatory Requirement for UI
 
 1. Before finish fetching data, please showing loading icon or animation.
@@ -50,3 +48,8 @@ This application uses the follow packages:
 - [Styled components](https://styled-components.com/)
 - [Axios](https://axios-http.com/docs/intro)
 - [React Query](https://tanstack.com/query/v4/docs/installation)
+
+## Live Demo
+
+It's possible to access a live demo example on:
+[live demo](https://hn-top-stories-list.surge.sh/)
