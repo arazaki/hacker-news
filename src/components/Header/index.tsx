@@ -1,8 +1,10 @@
+import { Container } from "./styles";
+
 const Header = () => {
   return (
-    <div>
+    <Container>
       <h1>Hacker News List</h1>
-    </div>
+    </Container>
   );
 };
 export default Header;
