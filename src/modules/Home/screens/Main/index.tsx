@@ -36,7 +36,7 @@ const HomeScreen = () => {
     );
   }
   if (!isLoading && items.length === 0) {
-    return <h1>Vazio</h1>;
+    return <h1>No stories found.</h1>;
   }
 
   return (
@@ -47,7 +47,6 @@ const HomeScreen = () => {
           title={item.title}
           by={item.by}
           url={item.url}
-          id={item.id}
         />
       ))}
       {hasNextPage && (
