@@ -37,10 +37,6 @@ declare module "styled-components" {
         dark: string;
       };
     };
-    fonts: {
-      body: string;
-      heading: string;
-    };
     fontSizes: {
       xs: string;
       sm: string;

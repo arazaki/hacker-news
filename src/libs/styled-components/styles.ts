@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import "@fontsource/roboto";
 
 const GlobalStyle = createGlobalStyle`
   *,
@@ -17,12 +18,12 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     color: ${({ theme }) => theme.colors.text.light};
-    font-family: ${({ theme }) => theme.fonts.body};
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     background-color: ${({ theme }) => theme.colors.background.dark};
   }
   button, input{
-    font-family: ${({ theme }) => theme.fonts.body};
+    font-family: "Roboto", sans-serif;
   }
 
   body{
@@ -33,8 +34,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1, h2, h3{
-    font-family: ${({ theme }) => theme.fonts.heading};
-    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
   }
 
   h1{
