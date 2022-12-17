@@ -15,7 +15,7 @@ export const useTopStories = (
   options?: UseInfiniteQueryOptions<TopStoriesResponse, ApiError>
 ) => {
   return useInfiniteQuery<TopStoriesResponse, ApiError>(
-    ["useTopStoriesIds"],
+    ["useTopStories"],
     async ({ pageParam = 0 }) => {
       const response = await baseApi.get<TopStoriesApiResponse>(
         `/topstories.json`
