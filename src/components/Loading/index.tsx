@@ -1,5 +1,11 @@
+import { Loader, Container } from "./styles";
+
 const Loading = () => {
-  return <div>Loading...</div>;
+  return (
+    <Container>
+      <Loader />
+    </Container>
+  );
 };
 
 export default Loading;
